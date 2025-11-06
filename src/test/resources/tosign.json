@@ -1,0 +1,922 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://data.europa.eu/snb/model/context/edc-ap"
+  ],
+  "id": "urn:credential:3a72e9bd-5134-46e7-e063-0100007f3dca",
+  "type": [
+    "VerifiableCredential",
+    "EuropeanDigitalCredential"
+  ],
+  "credentialSchema": [
+    {
+      "id": "http://data.europa.eu/snb/model/ap/edc-generic-full",
+      "type": "ShaclValidator2017"
+    },
+    {
+      "id": "https://api-pilot.ebsi.eu/trusted-schemas-registry/v3/schemas/0x7ff3bc76bd5e37b3d29721b8698646a722a24a4f4ab0a0ba63d4bbbe0ef9758d",
+      "type": "JsonSchema"
+    }
+  ],
+  "credentialSubject": {
+    "id": "urn:epass:person:1",
+    "type": "Person",
+    "givenName": {
+      "es": [
+        "Cristóbal"
+      ]
+    },
+    "familyName": {
+      "es": [
+        "Alvariño Galdo"
+      ]
+    },
+    "fullName": {
+      "es": [
+        "Cristóbal Alvariño Galdo"
+      ]
+    },
+    "hasClaim": [
+      {
+        "id": "urn:epass:learningAchievement:1",
+        "type": "LearningAchievement",
+        "awardedBy": {
+          "id": "urn:epass:awardingProcess:1",
+          "type": "AwardingProcess",
+          "awardingBody": [
+            {
+              "id": "urn:epass:org:1",
+              "type": "Organisation",
+              "altLabel": {
+                "es": [
+                  "Universidad Jaume I"
+                ],
+                "en": [
+                  "Jaume I University"
+                ]
+              },
+              "location": [
+                {
+                  "id": "urn:epass:location:1",
+                  "type": "Location",
+                  "address": [
+                    {
+                      "id": "urn:epass:address:1",
+                      "type": "Address",
+                      "countryCode": {
+                        "id": "http://publications.europa.eu/resource/authority/country/ESP",
+                        "type": "Concept",
+                        "inScheme": {
+                          "id": "http://publications.europa.eu/resource/authority/country",
+                          "type": "ConceptScheme"
+                        },
+                        "prefLabel": {
+                          "en": [
+                            "Spain"
+                          ],
+                          "es": [
+                            "España"
+                          ]
+                        },
+                        "notation": "country"
+                      }
+                    }
+                  ],
+                  "description": {
+                    "es": [
+                      "Avinguda de Vicent Sos Baynat, s/n 12006"
+                    ],
+                    "en": [
+                      "Avinguda de Vicent Sos Baynat, s/n 12006"
+                    ]
+                  }
+                }
+              ],
+              "homepage": [
+                {
+                  "id": "urn:epass:webResource:1",
+                  "type": "WebResource",
+                  "contentURL": "https://www.uji.es"
+                }
+              ],
+              "legalName": {
+                "es": [
+                  "Universitat Jaume I"
+                ],
+                "en": [
+                  "Universitat Jaume I"
+                ]
+              },
+              "registration": {
+                "id": "urn:epass:legalIdentifier:2",
+                "type": "LegalIdentifier",
+                "notation": "Q-6250003-H",
+                "spatial": {
+                  "id": "http://publications.europa.eu/resource/authority/country/ESP",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://publications.europa.eu/resource/authority/country",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Spain"
+                    ],
+                    "es": [
+                      "España"
+                    ]
+                  },
+                  "notation": "country"
+                }
+              }
+            }
+          ]
+        },
+        "title": {
+          "es": [
+            "Soft Skills"
+          ],
+          "en": [
+            "Soft Skills"
+          ]
+        },
+        "entitlesTo": [],
+        "influencedBy": [
+          {
+            "id": "urn:epass:activity:1",
+            "type": "LearningActivity",
+            "awardedBy": {
+              "id": "urn:epass:awardingProcess:1",
+              "type": "AwardingProcess",
+              "awardingBody": [
+                {
+                  "id": "urn:epass:org:1",
+                  "type": "Organisation",
+                  "altLabel": {
+                    "es": [
+                      "Universidad Jaume I"
+                    ],
+                    "en": [
+                      "Jaume I University"
+                    ]
+                  },
+                  "location": [
+                    {
+                      "id": "urn:epass:location:1",
+                      "type": "Location",
+                      "address": [
+                        {
+                          "id": "urn:epass:address:1",
+                          "type": "Address",
+                          "countryCode": {
+                            "id": "http://publications.europa.eu/resource/authority/country/ESP",
+                            "type": "Concept",
+                            "inScheme": {
+                              "id": "http://publications.europa.eu/resource/authority/country",
+                              "type": "ConceptScheme"
+                            },
+                            "prefLabel": {
+                              "en": [
+                                "Spain"
+                              ],
+                              "es": [
+                                "España"
+                              ]
+                            },
+                            "notation": "country"
+                          }
+                        }
+                      ],
+                      "description": {
+                        "es": [
+                          "Avinguda de Vicent Sos Baynat, s/n 12006"
+                        ],
+                        "en": [
+                          "Avinguda de Vicent Sos Baynat, s/n 12006"
+                        ]
+                      }
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "id": "urn:epass:webResource:1",
+                      "type": "WebResource",
+                      "contentURL": "https://www.uji.es"
+                    }
+                  ],
+                  "legalName": {
+                    "es": [
+                      "Universitat Jaume I"
+                    ],
+                    "en": [
+                      "Universitat Jaume I"
+                    ]
+                  },
+                  "registration": {
+                    "id": "urn:epass:legalIdentifier:2",
+                    "type": "LegalIdentifier",
+                    "notation": "Q-6250003-H",
+                    "spatial": {
+                      "id": "http://publications.europa.eu/resource/authority/country/ESP",
+                      "type": "Concept",
+                      "inScheme": {
+                        "id": "http://publications.europa.eu/resource/authority/country",
+                        "type": "ConceptScheme"
+                      },
+                      "prefLabel": {
+                        "en": [
+                          "Spain"
+                        ],
+                        "es": [
+                          "España"
+                        ]
+                      },
+                      "notation": "country"
+                    }
+                  }
+                }
+              ]
+            },
+            "title": {
+              "es": [
+                "Actividades de aprendizaje de carácter práctico pudiendo ser actividades tanto síncronas, presenciales o en línea, como asíncronas."
+              ]
+            },
+            "specifiedBy": {
+              "id": "urn:epass:learningActivitySpec:1",
+              "type": "LearningActivitySpecification",
+              "title": {
+                "es": [
+                  "Actividades de aprendizaje de carácter práctico pudiendo ser actividades tanto síncronas, presenciales o en línea, como asíncronas."
+                ]
+              }
+            },
+            "workload": "PT100H"
+          }
+        ],
+        "provenBy": [
+          {
+            "id": "urn:epass:learningAssessment:1",
+            "type": "LearningAssessment",
+            "awardedBy": {
+              "id": "urn:epass:awardingProcess:1",
+              "type": "AwardingProcess",
+              "awardingBody": [
+                {
+                  "id": "urn:epass:org:1",
+                  "type": "Organisation",
+                  "altLabel": {
+                    "es": [
+                      "Universidad Jaume I"
+                    ],
+                    "en": [
+                      "Jaume I University"
+                    ]
+                  },
+                  "location": [
+                    {
+                      "id": "urn:epass:location:1",
+                      "type": "Location",
+                      "address": [
+                        {
+                          "id": "urn:epass:address:1",
+                          "type": "Address",
+                          "countryCode": {
+                            "id": "http://publications.europa.eu/resource/authority/country/ESP",
+                            "type": "Concept",
+                            "inScheme": {
+                              "id": "http://publications.europa.eu/resource/authority/country",
+                              "type": "ConceptScheme"
+                            },
+                            "prefLabel": {
+                              "en": [
+                                "Spain"
+                              ],
+                              "es": [
+                                "España"
+                              ]
+                            },
+                            "notation": "country"
+                          }
+                        }
+                      ],
+                      "description": {
+                        "es": [
+                          "Avinguda de Vicent Sos Baynat, s/n 12006"
+                        ],
+                        "en": [
+                          "Avinguda de Vicent Sos Baynat, s/n 12006"
+                        ]
+                      }
+                    }
+                  ],
+                  "homepage": [
+                    {
+                      "id": "urn:epass:webResource:1",
+                      "type": "WebResource",
+                      "contentURL": "https://www.uji.es"
+                    }
+                  ],
+                  "legalName": {
+                    "es": [
+                      "Universitat Jaume I"
+                    ],
+                    "en": [
+                      "Universitat Jaume I"
+                    ]
+                  },
+                  "registration": {
+                    "id": "urn:epass:legalIdentifier:2",
+                    "type": "LegalIdentifier",
+                    "notation": "Q-6250003-H",
+                    "spatial": {
+                      "id": "http://publications.europa.eu/resource/authority/country/ESP",
+                      "type": "Concept",
+                      "inScheme": {
+                        "id": "http://publications.europa.eu/resource/authority/country",
+                        "type": "ConceptScheme"
+                      },
+                      "prefLabel": {
+                        "en": [
+                          "Spain"
+                        ],
+                        "es": [
+                          "España"
+                        ]
+                      },
+                      "notation": "country"
+                    }
+                  }
+                }
+              ]
+            },
+            "title": {
+              "es": [
+                "Trabajos escritos, cuestionarios de evaluación y presentaciones orales presenciales. Portfolio de formato libre y creativo."
+              ]
+            },
+            "grade": {
+              "id": "urn:epass:note:1",
+              "type": "Note",
+              "noteLiteral": {
+                "es": [
+                  ""
+                ]
+              }
+            },
+            "idVerification": {
+              "id": "http://data.europa.eu/snb/supervision-verification/df2880c5cb",
+              "type": "Concept",
+              "inScheme": {
+                "id": "http://data.europa.eu/snb/supervision-verification/25831c2",
+                "type": "ConceptScheme"
+              },
+              "prefLabel": {
+                "en": [
+                  ""
+                ],
+                "es": [
+                  "No supervisado con verificación de la identidad "
+                ]
+              }
+            },
+            "specifiedBy": {
+              "id": "urn:epass:learningAssessmentSpec:1",
+              "type": "LearningAssessmentSpecification",
+              "title": {
+                "es": [
+                  "Apto/No Apto/NP"
+                ]
+              },
+              "dcType": [
+                {
+                  "id": "http://data.europa.eu/snb/assessment/6e6cb2cc78",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://data.europa.eu/snb/assessment/25831c2",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "project work"
+                    ],
+                    "es": [
+                      "Trabajo en un proyecto"
+                    ]
+                  }
+                }
+              ],
+              "gradingScheme": {
+                "id": "urn:epass:gradingScheme:1",
+                "type": "GradingScheme",
+                "title": {
+                  "es": [
+                    "Apto/No Apto/NP"
+                  ]
+                }
+              },
+              "language": [
+                {
+                  "id": "http://publications.europa.eu/resource/authority/language/SPA",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://publications.europa.eu/resource/authority/language",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Spanish"
+                    ],
+                    "es": [
+                      "español"
+                    ]
+                  },
+                  "notation": "language"
+                }
+              ],
+              "mode": [
+                {
+                  "id": "http://data.europa.eu/snb/learning-assessment/729f3bed4b",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Workbased"
+                    ],
+                    "es": [
+                      "Basado en el trabajo"
+                    ]
+                  }
+                },
+                {
+                  "id": "http://data.europa.eu/snb/learning-assessment/7813801c77",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Project based"
+                    ],
+                    "es": [
+                      "Basado en proyectos"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "specifiedBy": {
+          "id": "urn:epass:qualification:1",
+          "type": "Qualification",
+          "title": {
+            "es": [
+              "Soft Skills"
+            ]
+          },
+          "creditPoint": [
+            {
+              "id": "urn:epass:creditPoint:1",
+              "type": "CreditPoint",
+              "framework": {
+                "id": "http://data.europa.eu/snb/education-credit/6fcec5c5af",
+                "type": "Concept",
+                "inScheme": {
+                  "id": "http://data.europa.eu/snb/education-credit/25831c2",
+                  "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                  "en": [
+                    "European Credit Transfer System"
+                  ],
+                  "es": [
+                    "Sistema Europeo de Transferencia de Créditos"
+                  ]
+                }
+              },
+              "point": "4"
+            }
+          ],
+          "language": [
+            {
+              "id": "http://publications.europa.eu/resource/authority/language/SPA",
+              "type": "Concept",
+              "inScheme": {
+                "id": "http://publications.europa.eu/resource/authority/language",
+                "type": "ConceptScheme"
+              },
+              "prefLabel": {
+                "en": [
+                  "Spanish"
+                ],
+                "es": [
+                  "español"
+                ]
+              },
+              "notation": "language"
+            }
+          ],
+          "learningOutcome": [
+            {
+              "id": "urn:epass:learningOutcome:1",
+              "type": "LearningOutcome",
+              "relatedESCOSkill": [
+                {
+                  "id": "http://data.europa.eu/esco/skill/6f142deb-03a9-4cd7-94ce-e0f023ae2169 ",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://data.europa.eu/esco/concept-scheme/skills",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Communicate."
+                    ],
+                    "es": [
+                      "Comunicarse."
+                    ]
+                  },
+                  "notation": "Skill"
+                }
+              ],
+              "title": {
+                "es": [
+                  "Saber comunicarse de manera efectiva tanto por escrito como oralmente."
+                ]
+              }
+            },
+            {
+              "id": "urn:epass:learningOutcome:2",
+              "type": "LearningOutcome",
+              "relatedESCOSkill": [
+                {
+                  "id": "http://data.europa.eu/esco/isced-f/0223",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://data.europa.eu/esco/concept-scheme/skills",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Philosophy and ethics."
+                    ],
+                    "es": [
+                      "Filosofía y ética."
+                    ]
+                  },
+                  "notation": "Skill"
+                }
+              ],
+              "title": {
+                "es": [
+                  "Saber comportarse con una ética responsable y guiarse por la integridad y la responsabilidad con la sociedad y con su organización."
+                ]
+              }
+            },
+            {
+              "id": "urn:epass:learningOutcome:3",
+              "type": "LearningOutcome",
+              "relatedESCOSkill": [
+                {
+                  "id": "http://data.europa.eu/esco/skill/85b379e7-e0b7-48b8-baa7-631f50a7cdd5",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://data.europa.eu/esco/concept-scheme/skills",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Communication, Collaboration and Creativity."
+                    ],
+                    "es": [
+                      "Comunicación, colaboración y creatividad."
+                    ]
+                  },
+                  "notation": "Skill"
+                }
+              ],
+              "title": {
+                "es": [
+                  "Utilizar la creatividad como herramienta fundamental para abordar la resolución de situaciones complejas."
+                ]
+              }
+            },
+            {
+              "id": "urn:epass:learningOutcome:4",
+              "type": "LearningOutcome",
+              "relatedESCOSkill": [
+                {
+                  "id": "http://data.europa.eu/esco/skill/fe5eabaa-63f6-4c44-b405-fc3ded8d56cb",
+                  "type": "Concept",
+                  "inScheme": {
+                    "id": "http://data.europa.eu/esco/concept-scheme/skills",
+                    "type": "ConceptScheme"
+                  },
+                  "prefLabel": {
+                    "en": [
+                      "Leading other people"
+                    ],
+                    "es": [
+                      "Dirigir a otras personas"
+                    ]
+                  },
+                  "notation": "Skill"
+                }
+              ],
+              "title": {
+                "es": [
+                  "Gestionar y dirigir equipos de trabajo."
+                ]
+              }
+            }
+          ],
+          "mode": [
+            {
+              "id": "http://data.europa.eu/snb/learning-assessment/e92d221e4d",
+              "type": "Concept",
+              "inScheme": {
+                "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+                "type": "ConceptScheme"
+              },
+              "prefLabel": {
+                "en": [
+                  "Blended"
+                ],
+                "es": [
+                  "Mixto"
+                ]
+              }
+            }
+          ],
+          "targetGroup": [
+            {
+              "id": "http://data.europa.eu/snb/target-group/1599531db0",
+              "type": "Concept",
+              "inScheme": {
+                "id": "http://data.europa.eu/snb/target-group/25831c2",
+                "type": "ConceptScheme"
+              },
+              "prefLabel": {
+                "en": [
+                  "Persons in tertiary education (EQF 6)"
+                ],
+                "es": [
+                  "Personas que cursan enseñanza superior (EQF 6)"
+                ]
+              }
+            }
+          ],
+          "thematicArea": [
+            {
+              "id": "http://data.europa.eu/snb/isced-f/081",
+              "type": "Concept",
+              "inScheme": {
+                "id": "http://data.europa.eu/snb/isced-f/25831c2",
+                "type": "ConceptScheme"
+              },
+              "prefLabel": {
+                "en": [
+                  "Work skills"
+                ],
+                "es": [
+                  "Competencias laborales"
+                ]
+              }
+            }
+          ],
+          "eqfLevel": {
+            "id": "http://data.europa.eu/snb/eqf/5",
+            "type": "Concept",
+            "inScheme": {
+              "id": "http://data.europa.eu/snb/eqf/25831c2",
+              "type": "ConceptScheme"
+            },
+            "prefLabel": {
+              "en": [
+                "Level 6"
+              ],
+              "es": [
+                "Nivel 6"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "issuer": {
+    "id": "urn:epass:org:1",
+    "type": "Organisation",
+    "altLabel": {
+      "es": [
+        "Universidad Jaume I"
+      ],
+      "en": [
+        "Jaume I University"
+      ]
+    },
+    "location": [
+      {
+        "id": "urn:epass:location:1",
+        "type": "Location",
+        "address": [
+          {
+            "id": "urn:epass:address:1",
+            "type": "Address",
+            "countryCode": {
+              "id": "http://publications.europa.eu/resource/authority/country/ESP",
+              "type": "Concept",
+              "inScheme": {
+                "id": "http://publications.europa.eu/resource/authority/country",
+                "type": "ConceptScheme"
+              },
+              "prefLabel": {
+                "en": [
+                  "Spain"
+                ],
+                "es": [
+                  "España"
+                ]
+              },
+              "notation": "country"
+            }
+          }
+        ],
+        "description": {
+          "es": [
+            "Avinguda de Vicent Sos Baynat, s/n 12006"
+          ],
+          "en": [
+            "Avinguda de Vicent Sos Baynat, s/n 12006"
+          ]
+        }
+      }
+    ],
+    "homepage": [
+      {
+        "id": "urn:epass:webResource:1",
+        "type": "WebResource",
+        "contentURL": "https://www.uji.es"
+      }
+    ],
+    "legalName": {
+      "es": [
+        "Universitat Jaume I"
+      ],
+      "en": [
+        "Universitat Jaume I"
+      ]
+    },
+    "registration": {
+      "id": "urn:epass:legalIdentifier:2",
+      "type": "LegalIdentifier",
+      "notation": "Q-6250003-H",
+      "spatial": {
+        "id": "http://publications.europa.eu/resource/authority/country/ESP",
+        "type": "Concept",
+        "inScheme": {
+          "id": "http://publications.europa.eu/resource/authority/country",
+          "type": "ConceptScheme"
+        },
+        "prefLabel": {
+          "en": [
+            "Spain"
+          ],
+          "es": [
+            "España"
+          ]
+        },
+        "notation": "country"
+      }
+    }
+  },
+  "issuanceDate": "2025-07-21T19:13:07+02:00",
+  "issued": "2025-07-21T19:13:07+02:00",
+  "validFrom": "2025-06-16T02:00:00+02:00",
+  "credentialProfiles": [
+    {
+      "id": "http://data.europa.eu/snb/credential/e34929035b",
+      "type": "Concept",
+      "inScheme": {
+        "id": "http://data.europa.eu/snb/credential/25831c2",
+        "type": "ConceptScheme"
+      },
+      "prefLabel": {
+        "en": [
+          "Generic"
+        ],
+        "es": [
+          "Genérica"
+        ]
+      }
+    }
+  ],
+  "displayParameter": {
+    "id": "urn:epass:displayParameter:1",
+    "type": "DisplayParameter",
+    "language": [
+      {
+        "id": "http://publications.europa.eu/resource/authority/language/SPA",
+        "type": "Concept",
+        "inScheme": {
+          "id": "http://publications.europa.eu/resource/authority/language",
+          "type": "ConceptScheme"
+        },
+        "prefLabel": {
+          "en": [
+            "Spanish"
+          ]
+        },
+        "notation": "language"
+      }
+    ],
+    "description": {
+      "en": [
+        "Based on EBSI Example : https://github.com/Knowledge-Innovation-Centre/ESBI-JSON-schemas/blob/main/examples%20of%20credentials/transcript%20of%20records%20generic.json"
+      ]
+    },
+    "individualDisplay": [
+      {
+        "id": "urn:epass:individualDisplay:3a72e9bd-5135-46e7-e063-0100007f3dca",
+        "type": "IndividualDisplay",
+        "language": {
+          "id": "http://publications.europa.eu/resource/authority/language/SPA",
+          "type": "Concept",
+          "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+          },
+          "prefLabel": {
+            "es": [
+              "Spanish"
+            ]
+          },
+          "notation": "language"
+        },
+        "displayDetail": [
+          {
+            "id": "urn:epass:displayDetail:3a72e9bd-5136-46e7-e063-0100007f3dca",
+            "type": "DisplayDetail",
+            "image": {
+              "id": "urn:epass:mediaObject:3a72e9bd-5137-46e7-e063-0100007f3dca",
+              "type": "MediaObject",
+              "content": "/9j/4AAQSkZJRgABAQEASABIAAD/4QDWRXhpZgAATU0AKgAAAAgABwESAAMAAAABAAEAAAEaAAUAAAABAAAAYgEbAAUAAAABAAAAagEoAAMAAAABAAIAAAExAAIAAAAeAAAAcgEyAAIAAAAUAAAAkIdpAAQAAAABAAAApAAAAAAAAABIAAAAAQAAAEgAAAABQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MAMjAyNTowNzoyMSAxNToyMToxOQAAA6ABAAMAAAABAAEAAKACAAMAAAABAFAAAKADAAMAAAABAC8AAAAAAAD/4RL5aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjUuMCI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiBkYzpmb3JtYXQ9ImltYWdlL2pwZWciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wOkNyZWF0ZURhdGU9IjIwMTctMDYtMTVUMTQ6MTM6MDArMDI6MDAiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjUtMDctMjFUMTU6MjE6MTkrMDI6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI1LTA3LTIxVDE1OjIxOjE5KzAyOjAwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJBQzU3Njk0QzE1MUU3MTE4MkQ4OEE1RUYxMDY4MDQ4IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjMyQzU3Njk0QzE1MUU3MTE4MkQ4OEE1RUYxMDY4MDQ4IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MkFDNTc2OTRDMTUxRTcxMTgyRDg4QTVFRjEwNjgwNDgiPiA8eG1wTU06RGVyaXZlZEZyb20geG1wTU06ZG9jdW1lbnRJRD0ieG1wLmRpZDoyQUM1NzY5NEMxNTFFNzExODJEODhBNUVGMTA2ODA0OCIgeG1wTU06aW5zdGFuY2VJRD0ieG1wLmlpZDozMUM1NzY5NEMxNTFFNzExODJEODhBNUVGMTA2ODA0OCIgeG1wTU06b3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjJBQzU3Njk0QzE1MUU3MTE4MkQ4OEE1RUYxMDY4MDQ4Ii8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSB4bXBNTTphY3Rpb249ImNyZWF0ZWQiIHhtcE1NOmluc3RhbmNlSUQ9InhtcC5paWQ6MkFDNTc2OTRDMTUxRTcxMTgyRDg4QTVFRjEwNjgwNDgiIHhtcE1NOnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBXaW5kb3dzIiB4bXBNTTp3aGVuPSIyMDE3LTA2LTE1VDE0OjEzOjAwKzAyOjAwIi8+IDxyZGY6bGkgeG1wTU06YWN0aW9uPSJzYXZlZCIgeG1wTU06Y2hhbmdlZD0iLyIgeG1wTU06aW5zdGFuY2VJRD0ieG1wLmlpZDoyQkM1NzY5NEMxNTFFNzExODJEODhBNUVGMTA2ODA0OCIgeG1wTU06c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOndoZW49IjIwMTctMDYtMTVUMTQ6MTU6MTErMDI6MDAiLz4gPHJkZjpsaSB4bXBNTTphY3Rpb249ImNvbnZlcnRlZCIgeG1wTU06cGFyYW1ldGVycz0iZnJvbSBpbWFnZS9qcGVnIHRvIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AiLz4gPHJkZjpsaSB4bXBNTTphY3Rpb249ImRlcml2ZWQiIHhtcE1NOnBhcmFtZXRlcnM9ImNvbnZlcnRlZCBmcm9tIGltYWdlL2pwZWcgdG8gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCIvPiA8cmRmOmxpIHhtcE1NOmFjdGlvbj0ic2F2ZWQiIHhtcE1NOmNoYW5nZWQ9Ii8iIHhtcE1NOmluc3RhbmNlSUQ9InhtcC5paWQ6MkNDNTc2OTRDMTUxRTcxMTgyRDg4QTVFRjEwNjgwNDgiIHhtcE1NOnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBXaW5kb3dzIiB4bXBNTTp3aGVuPSIyMDE3LTA2LTE1VDE0OjE1OjExKzAyOjAwIi8+IDxyZGY6bGkgeG1wTU06YWN0aW9uPSJzYXZlZCIgeG1wTU06Y2hhbmdlZD0iLyIgeG1wTU06aW5zdGFuY2VJRD0ieG1wLmlpZDozMUM1NzY5NEMxNTFFNzExODJEODhBNUVGMTA2ODA0OCIgeG1wTU06c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOndoZW49IjIwMTctMDYtMTVUMTQ6MTg6MjgrMDI6MDAiLz4gPHJkZjpsaSB4bXBNTTphY3Rpb249ImNvbnZlcnRlZCIgeG1wTU06cGFyYW1ldGVycz0iZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL2pwZWciLz4gPHJkZjpsaSB4bXBNTTphY3Rpb249ImRlcml2ZWQiIHhtcE1NOnBhcmFtZXRlcnM9ImNvbnZlcnRlZCBmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvanBlZyIvPiA8cmRmOmxpIHhtcE1NOmFjdGlvbj0ic2F2ZWQiIHhtcE1NOmNoYW5nZWQ9Ii8iIHhtcE1NOmluc3RhbmNlSUQ9InhtcC5paWQ6MzJDNTc2OTRDMTUxRTcxMTgyRDg4QTVFRjEwNjgwNDgiIHhtcE1NOnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUuMSBXaW5kb3dzIiB4bXBNTTp3aGVuPSIyMDE3LTA2LTE1VDE0OjE4OjI4KzAyOjAwIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJwcm9kdWNlZCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWZmaW5pdHkgUGhvdG8gMiAyLjYuMyIgc3RFdnQ6d2hlbj0iMjAyNS0wNy0yMVQxNToyMToxOSswMjowMCIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0idyI/Pv/tACxQaG90b3Nob3AgMy4wADhCSU0EJQAAAAAAENQdjNmPALIE6YAJmOz4Qn7/4gJkSUNDX1BST0ZJTEUAAQEAAAJUbGNtcwQwAABtbnRyUkdCIFhZWiAH6QAHABUADQAUAClhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAAD5jcHJ0AAABSAAAAEx3dHB0AAABlAAAABRjaGFkAAABqAAAACxyWFlaAAAB1AAAABRiWFlaAAAB6AAAABRnWFlaAAAB/AAAABRyVFJDAAACEAAAACBnVFJDAAACEAAAACBi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",
+              "contentEncoding": {
+                "id": "http://data.europa.eu/snb/encoding/6146cde7dd",
+                "type": "Concept",
+                "inScheme": {
+                  "id": "http://data.europa.eu/snb/encoding/25831c2",
+                  "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                  "en": [
+                    "base64"
+                  ]
+                }
+              },
+              "contentType": {
+                "id": "http://publications.europa.eu/resource/authority/file-type/PNG",
+                "type": "Concept",
+                "inScheme": {
+                  "id": "http://publications.europa.eu/resource/authority/file-type",
+                  "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                  "en": [
+                    "PNG"
+                  ]
+                },
+                "notation": "file-type"
+              }
+            },
+            "page": 1
+          }
+        ]
+      }
+    ],
+    "primaryLanguage": {
+      "id": "http://publications.europa.eu/resource/authority/language/SPA",
+      "type": "Concept",
+      "inScheme": {
+        "id": "http://publications.europa.eu/resource/authority/language",
+        "type": "ConceptScheme"
+      },
+      "prefLabel": {
+        "en": [
+          "Spanish"
+        ]
+      },
+      "notation": "language"
+    },
+    "title": {
+      "es": [
+        "Microcredencial Universitaria en Soft Skills"
+      ]
+    }
+  }
+}

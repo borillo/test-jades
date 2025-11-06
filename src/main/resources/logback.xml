@@ -1,0 +1,33 @@
+<configuration scan="true" debug="true">
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date %-5level [%thread] %logger{35} - %msg %n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>/var/log/uji/uji-srv-portafirmas-batch.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>/var/log/uji/uji-srv-portafirmas-batch.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%date %-5level [%thread] %logger{35} - %msg %n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="ASYNC_CONSOLE" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="CONSOLE"/>
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="FILE"/>
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <root level="info">
+    <appender-ref ref="ASYNC_CONSOLE" />
+    <appender-ref ref="ASYNC_FILE" />
+  </root>
+</configuration>
