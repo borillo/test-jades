@@ -1,9 +1,6 @@
-package es.uji.apps.srv.portafirmas.batch.model;
+package es.uji.apps.srv.portafirmas.batch.services;
 
 import es.uji.apps.srv.portafirmas.batch.signers.Signer;
-
-import java.io.FileOutputStream;
-import java.util.List;
 
 public class SignService {
     private Signer signer;
@@ -12,7 +9,7 @@ public class SignService {
         this.signer = signer;
     }
 
-    public Firma sign(String content) throws Exception {
+    public byte[] sign(String content) throws Exception {
         return signer.sign(content);
     }
 }

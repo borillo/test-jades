@@ -25,69 +25,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 public class JAdESTest {
-    private static final String DOCUMENT_TO_SIGN_DATA = "{\"a\":1}";
-
-    public static byte[] inputStreamToByteArray(InputStream in) throws IOException {
-        byte[] buffer = new byte[2048];
-        int length = 0;
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
-        while ((length = in.read(buffer)) >= 0) {
-            baos.write(buffer, 0, length);
-        }
-
-        return baos.toByteArray();
-    }
-
-    @Test
-    public void jadesSignAdVerify() throws Exception {
-        String id = UUID.randomUUID().toString();
-
-        String keyStoreType = "PKCS12";
-        String keyStorePath = "/etc/uji/srv/portafirmas-batch/eujier.p12";
-        String keyStorePassword = "axJSyXkY";
-
-        JAdESSigner signer = new JAdESSigner(keyStoreType, keyStorePath, keyStorePassword);
-        byte[] signedData = signer.sign(DOCUMENT_TO_SIGN_DATA);
-
-        dumpFile(id, signedData);
-
-        DSSDocument signedDocument = new InMemoryDocument(signedData, "/tmp/" + id + ".json");
-        SignedDocumentValidator validator = SignedDocumentValidator.fromDocument(signedDocument);
-
-        CommonCertificateVerifier certificateVerifier = createCertificateVerifier(keyStoreType, keyStorePath, keyStorePassword);
-        validator.setCertificateVerifier(certificateVerifier);
-
-        Reports reports = validator.validateDocument();
-        processValidationResults(reports);
-    }
-
-    @Test
-    public void verifiyFromFile() throws Exception {
-        String keyStoreType = "PKCS12";
-        String keyStorePath = "/etc/uji/srv/portafirmas-batch/eujier.p12";
-        String keyStorePassword = "axJSyXkY";
-
-        byte[] signedData = inputStreamToByteArray(new FileInputStream("/tmp/out2.json"));
-
-        DSSDocument signedDocument = new InMemoryDocument(signedData, "out.json");
-        SignedDocumentValidator validator = SignedDocumentValidator.fromDocument(signedDocument);
-
-        CommonCertificateVerifier certificateVerifier = createCertificateVerifier(keyStoreType, keyStorePath, keyStorePassword);
-        validator.setCertificateVerifier(certificateVerifier);
-
-        Reports reports = validator.validateDocument();
-        processValidationResults(reports);
-    }
+    private final String keyStoreType = "JKS";
+    private final String keyStorePath = this.getClass().getClassLoader().getResource("cert.jks").getPath();
+    private final String keyStorePassword = "123456";
 
     @Test
     public void signFromFile() throws Exception {
-        String keyStoreType = "PKCS12";
-        String keyStorePath = "/etc/uji/eujier.p12";
-        String keyStorePassword = "axJSyXkY";
         String signedFileName = "signed.json";
 
         byte[] data = readFile("tosign.json");
@@ -110,6 +55,27 @@ public class JAdESTest {
     private byte[] readFile(String fileName) throws IOException {
         InputStream resourceStream = getClass().getClassLoader().getResourceAsStream(fileName);
         return inputStreamToByteArray(resourceStream);
+    }
+
+    private static void dumpFile(String fileName, byte[] signedData) throws IOException, URISyntaxException {
+        URL resourceUrl = JAdESSigner.class.getClassLoader().getResource("tosign.json");
+        File file = new File(resourceUrl.getPath());
+
+        FileOutputStream fos = new FileOutputStream(file.getParentFile().getAbsolutePath() + "/" + fileName);
+        fos.write(signedData);
+        fos.close();
+    }
+
+    public static byte[] inputStreamToByteArray(InputStream in) throws IOException {
+        byte[] buffer = new byte[2048];
+        int length = 0;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+        while ((length = in.read(buffer)) >= 0) {
+            baos.write(buffer, 0, length);
+        }
+
+        return baos.toByteArray();
     }
 
     private CommonCertificateVerifier createCertificateVerifier(String keystoreType, String keystorePath, String keystorePassword) throws Exception {
@@ -278,14 +244,5 @@ public class JAdESTest {
         }
 
         System.out.println("======================");
-    }
-
-    private static void dumpFile(String fileName, byte[] signedData) throws IOException, URISyntaxException {
-        URL resourceUrl = JAdESSigner.class.getClassLoader().getResource("tosign.json");
-        File file = new File(resourceUrl.getPath());
-
-        FileOutputStream fos = new FileOutputStream(file.getParentFile().getAbsolutePath() + "/" + fileName);
-        fos.write(signedData);
-        fos.close();
     }
 }

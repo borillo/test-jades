@@ -2,7 +2,6 @@ package es.uji.apps.srv.portafirmas.batch.signers;
 
 import eu.europa.esig.dss.enumerations.*;
 import eu.europa.esig.dss.jades.JAdESSignatureParameters;
-import eu.europa.esig.dss.jades.JAdESTimestampParameters;
 import eu.europa.esig.dss.jades.signature.JAdESService;
 import eu.europa.esig.dss.model.DSSDocument;
 import eu.europa.esig.dss.model.InMemoryDocument;
